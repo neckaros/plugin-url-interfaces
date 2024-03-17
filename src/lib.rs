@@ -26,4 +26,5 @@ pub struct RsLink {
 pub enum RsLinkType {
 	Post,
     Profile,
+    Other,
 }
