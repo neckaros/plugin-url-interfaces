@@ -20,11 +20,15 @@ pub struct RsLink {
     pub plugin: Option<String>,
 }
 
-#[derive(Debug, Serialize, Deserialize, Clone, PartialEq, strum_macros::Display,EnumString)]
+#[derive(Debug, Serialize, Deserialize, Clone, PartialEq, strum_macros::Display,EnumString, Default)]
 #[serde(rename_all = "camelCase")] 
 #[strum(serialize_all = "camelCase")]
 pub enum RsLinkType {
 	Post,
     Profile,
+    Video,
+    Photo,
+    File,
+    #[default]
     Other,
 }
